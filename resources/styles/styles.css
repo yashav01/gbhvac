@@ -50,6 +50,32 @@ header {
     background-color: rgba(137, 232, 245, 1);
     z-index: 5;
     line-height: 250%;
+    position: sticky;
+    top: 0px;
+    margin-top: -10px;
+    padding-top: 5px;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+.noLine {
+    font-style: normal;
+    
 }
 
 /*logo*/
@@ -73,7 +99,7 @@ header {
     border: 1px solid rgb(192, 17, 17);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 633px) {
     body {
         font-size: 10px;
     }
@@ -89,7 +115,7 @@ header {
     body {
         font-size: 10px;
     }
-    
+
 }
 @media only screen and (max-width: 975px) {
     body {
@@ -124,8 +150,6 @@ main {
 }
 
 /*landing*/
-
-
 .landing {
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr ;
@@ -133,6 +157,9 @@ main {
     align-items: center;
     max-height: 500px;
     overflow: hidden;
+    position: sticky;
+    top: 100px;
+    z-index: -1;
 }
 
 #video {
@@ -155,19 +182,57 @@ main {
     padding: 20px;
     word-spacing: 2px;
     line-height: 2;
-    
 }
 
 
 /*services*/
-.services {
-    
+.servicesSection {
+    background-color: rgba(0, 0, 0, 0.692);
     border: 1px solid black;
+    text-align: center;
+    font-family: 'Mochiy';
+    color: ivory;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.serviceSectionTitle {
+    background-color: black;
+    padding: 10px;
+}
+
+.serviceBoxContainer {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid black;
+} 
+
+.serviceBox {
+    border: 1px solid rgb(255, 255, 255);
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    background-color: rgba(151, 168, 165, 0.918);
+}
+
+.serviceBox img {
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+}
+
+.serviceBox p {
+    padding: 0 2px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*about*/
 .about {
-  
+
     border: 1px solid black;
 }
 
