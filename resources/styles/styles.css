@@ -83,20 +83,20 @@ a:link {
     width: 50%;
     height: 5em;
     display: flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #logo {
     width: auto;
     height: 100%;
-    border: 1px solid rgb(30, 27, 197);
+    /* border: 1px solid rgb(30, 27, 197); */
 }
 
 .logo-container h1 {
     align-self: center;
     text-align: center;
     margin-left: 20px;
-    border: 1px solid rgb(192, 17, 17);
+    /* border: 1px solid rgb(192, 17, 17); */
 }
 
 @media only screen and (max-width: 633px) {
@@ -115,7 +115,6 @@ a:link {
     body {
         font-size: 10px;
     }
-
 }
 @media only screen and (max-width: 975px) {
     body {
@@ -134,7 +133,7 @@ header .nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border: 1px solid rgb(226, 6, 215);
+    /* border: 1px solid rgb(226, 6, 215); */
 }
 
 .nav .button {
@@ -145,7 +144,7 @@ header .nav {
 main {
     display: grid;
     grid-template: repeat(4, 100%);
-    border: 2px solid crimson;
+    /* border: 2px solid crimson; */
     min-width: 270px;
 }
 
@@ -158,8 +157,13 @@ main {
     max-height: 500px;
     overflow: hidden;
     position: sticky;
-    top: 100px;
+    top: 95px;
     z-index: -1;
+}
+@media only screen and (max-height: 400px) {
+    .landing {
+        max-height: 325px;
+    }
 }
 
 #video {
@@ -188,7 +192,7 @@ main {
 /*services*/
 .servicesSection {
     background-color: rgba(0, 0, 0, 0.692);
-    border: 1px solid black;
+    border-top: 1px solid ivory;
     text-align: center;
     font-family: 'Mochiy';
     color: ivory;
@@ -196,7 +200,7 @@ main {
     font-size: 12px;
 }
 
-.serviceSectionTitle {
+.sectionTitle {
     background-color: black;
     padding: 10px;
 }
@@ -208,12 +212,11 @@ main {
     align-content: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    border: 1px solid black;
 } 
 
 .serviceBox {
     border: 1px solid rgb(255, 255, 255);
-    width: 300px;
+    width: 275px;
     height: auto;
     margin: 10px;
     background-color: rgba(151, 168, 165, 0.918);
@@ -222,7 +225,6 @@ main {
 .serviceBox img {
     width: 100%;
     height: 200px;
-    z-index: -1;
 }
 
 .serviceBox p {
@@ -231,18 +233,84 @@ main {
 }
 
 /*about*/
-.about {
-
-    border: 1px solid black;
+.aboutSection {
+    background-color: rgba(0, 0, 0, 0.692);
+    border-top: 1px solid ivory;
+    text-align: center;
+    font-family: 'Mochiy';
+    color: ivory;
+    letter-spacing: 1px;
+    font-size: 12px;
 }
+
+.aboutBoxContainer {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} 
+
+.aboutBox {
+    border: 1px solid rgb(255, 255, 255);
+    width: 250px;
+    height: auto;
+    margin: 10px;
+    background-color: rgba(151, 168, 165, 0.918);
+}
+
+.aboutBox img {
+    width: 100%;
+    height: 200px;
+}
+
+.aboutBox p {
+    padding: 0 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
 
 /*contact*/
-.contact {
-    
-    border: 1px solid black;
+.contactSection {
+    background-color: rgba(0, 0, 0, 0.692);
+    border-top: 1px solid ivory;
+    text-align: center;
+    font-family: 'Mochiy';
+    color: ivory;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.contactBoxContainer {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} 
+
+.contactBox {
+    border: 1px solid rgb(255, 255, 255);
+    width: 250px;
+    height: auto;
+    margin: 10px;
+    background-color: rgba(151, 168, 165, 0.918);
+}
+
+.contactBox img {
+    width: 100%;
+    height: 200px;
+}
+
+.contactBox p {
+    padding: 0 2px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
+    
 
 
 
