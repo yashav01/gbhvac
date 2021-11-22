@@ -15,7 +15,7 @@
   /*global elements*/
 .button {
     background-color: rgb(218, 218, 218);
-    background-image: url("/companies/GBHVAC/resources/images/button.png");
+    background-image: url("../images/button.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
