@@ -62,22 +62,22 @@ a:link {
     color: black;
   }
   
-  a:visited {
+a:visited {
     text-decoration: none;
     color: black;
   }
   
-  a:hover {
-    text-decoration: underline;
+ a:hover {
+    text-decoration: none;
   }
   
-  a:active {
-    text-decoration: underline;
+ a:active {
+    text-decoration: none;
   }
 .noLine {
     font-style: normal;
-    
 }
+
 
 /*logo*/
 .logo-container {
